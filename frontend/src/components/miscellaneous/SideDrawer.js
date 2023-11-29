@@ -142,7 +142,7 @@ const SideDrawer = () => {
           alt="iLearnU Logo"
           display="flex"
           justify-content="center"
-          width="100px"
+          width="70px"
           height="auto"
         />
 
