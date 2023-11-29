@@ -26,7 +26,7 @@ const Login = () => {
 
   const submitHandler = async () => {
     setLoading(true);
-    if (!email || /*!studentnumber ||*/ !password) {
+    if (!email || !studentnumber || !password) {
       toast({
         title: "Please Fill in all the Fields",
         status: "warning",
