@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c767d793.css",
+    "main.js": "/static/js/main.d2d4a3c0.js",
+    "static/media/HomeBG.jpg": "/static/media/HomeBG.4d3ebf50265919437c50.jpg",
+    "static/media/ilchatu_hannah.png": "/static/media/ilchatu_hannah.bbec626688bccc5d79a4.png",
+    "index.html": "/index.html",
+    "main.c767d793.css.map": "/static/css/main.c767d793.css.map",
+    "main.d2d4a3c0.js.map": "/static/js/main.d2d4a3c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c767d793.css",
+    "static/js/main.d2d4a3c0.js"
+  ]
+}
