@@ -10,18 +10,23 @@ import {
 } from "@chakra-ui/react";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
-import { useHistory } from "react-router-dom";
 
+// import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 // import logoImage from './ilchatu_hannah.png';
 
 const Homepage = () => {
   const history = useHistory();
-
+  const location = useLocation();
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("userInfo"));
+     const user = JSON.parse(localStorage.getItem("userInfo"));
 
-    if (user) history.push("/chats");
-  }, [history]);
+    if (user) {
+      history.push("/chats");
+    }
+  }, []);
+
+
 
   return (
     <Container maxW="xl" centerContent>
@@ -30,15 +35,15 @@ const Homepage = () => {
   </Box> */}
       <Box
         bg="rgb(18, 172, 20);"
-        w="160%"
-        h="200%"
+        w="auto"
+        h="auto"
         p={4}
         borderRadius="30px"
         borderWidth="3px"
         mt={5}
         mb={30}
       >
-        <Tabs variant="soft-rounded">
+        <Tabs variant="soft-rounded" isFitted>
           <TabList mb="1em">
             <Tab color="white" width="50%">
               Login
@@ -59,8 +64,9 @@ const Homepage = () => {
           </TabPanels>
         </Tabs>
       </Box>
+   
     </Container>
   );
-};
+}
 
 export default Homepage;
